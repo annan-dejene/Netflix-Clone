@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3bec2755f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3bec2755f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="showcase">
-        <div class="showcase-top">
-            <img src="img/logo.png" alt="netflix-logo">
-            <a href="#" class="btn btn-rounded">Sign In</a>
-        </div>
-        <div class="showcase-content">
-            <h1>See what's next</h1>
-            <p>Watch anywhere. Cancel anytime</p>
-            <a href="#" class="btn btn-xl">
-                Watch Free for 30 days <i class="fas fa-chevron-right btn-icon"></i>
-            </a>
-        </div>
+      <div class="showcase-top">
+        <img src="img/logo.png" alt="netflix-logo" />
+        <a href="#" class="btn btn-rounded">Sign In</a>
+      </div>
+      <div class="showcase-content">
+        <h1>See what's next</h1>
+        <p>Watch anywhere. Cancel anytime</p>
+        <a href="#" class="btn btn-xl">
+          Watch Free for 30 days <i class="fas fa-chevron-right btn-icon"></i>
+        </a>
+      </div>
     </header>
-</body>
+
+    <section class="tabs">
+      <div class="container">
+        <div id="tab-1" class="tab-item tab-border">
+          <i class="fas fa-door-open fa-3x"></i>
+          <p class="hide-sm">Cancel anytime</p>
+        </div>
+        <div id="tab-1" class="tab-item">
+          <i class="fas fa-tablet-alt fa-3x"></i>
+          <p class="hide-sm">Watch anywhere</p>
+        </div>
+        <div id="tab-1" class="tab-item">
+          <i class="fas fa-tags fa-3x"></i>
+          <p class="hide-sm">Pick your price</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content">
+      <div class="container">
+        <!-- Tab Content 1 -->
+        <!-- <div id="tab-1-content" class="tab-content-item show">
+          <div class="tab-1-content-inner">
+            <div>
+              <p class="text-lg">
+                If you decide Netflix isn't for you - no problem. No commitment.
+                Cancel online anytime.
+              </p>
+              <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+            </div>
+            <div>
+              <img src="img/tab-content-1.png" alt="" />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Tab Content 2 -->
+        <div id="tab-2-content" class="tab-content-item show">
+          <div class="tab-2-content-inner">
+            <div class="tab-2-top-container">
+              <p class="text-lg">
+                Watch TV shows and movies anytime, anywhere — personalized for
+                you.
+              </p>
+              <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+            </div>
+            <div class="cards-container">
+              <div class="card-1">
+                <img src="img/tab-content-2-1.png" alt="" />
+                <p class="text-md text-center">Watch on your TV</p>
+                <p class="text-center">
+                  Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                  players and more.
+                </p>
+              </div>
+              <div class="card-2">
+                <img src="img/tab-content-2-2.png" alt="" />
+                <p class="text-md text-center">
+                  Watch instantly or download for later
+                </p>
+                <p class="text-center">
+                  Available on phone and tablet, wherever you go.
+                </p>
+              </div>
+              <div class="card-3">
+                <img src="img/tab-content-2-3.png" alt="" />
+                <p class="text-md text-center">Use any computer</p>
+                <p class="text-center">Watch right on Netflix.com.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
