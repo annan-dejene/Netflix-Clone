@@ -75,6 +75,10 @@ img {
     text-transform: uppercase;
 }
 
+.btn-icon {
+    margin-left: 1rem;
+}
+
 .text-xl {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -102,7 +106,7 @@ img {
 
 .showcase {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     position: relative;
     background: url('../img/background.jpg') no-repeat center center / cover;
 }
@@ -121,7 +125,7 @@ img {
 
 .showcase-top {
     position: relative;
-    height: 90px;
+    height: 18vh;
     z-index: 2;
 }
 
@@ -219,6 +223,16 @@ img {
 
 /* Individual Tab Styling */
 
+/* Hide Tabs Initially */
+
+#tab-1-content, #tab-2-content, #tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
 /* Tab-1 */
 
 #tab-1-content .tab-1-content-inner {
@@ -248,4 +262,163 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+/* Tab-3 */
+
+.tab-3-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer, .footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer div:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer-links ul li {
+    padding: 0.5rem 0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 960px) {
+    .showcase {
+        height: 70vh;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .showcase-content h1 {
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+
+    .showcase-content p {
+        font-size: 1.5rem;
+    }
+
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1.4rem 2rem;
+    }
+
+    .text-xl {
+        font-size: 1.5rem;
+    }
+
+    .text-lg {
+        font-size: 1.3rem;
+    }
+
+    .text-md {
+        font-size: 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .showcase::after {
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: inset 80px 80px 250px #000, inset -8px -80px 250px #000;
+    
+    }
+
+    #tab-1-content .tab-1-content-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .tab-2-content-inner .tab-2-top-container {
+        display: block;
+        text-align: center;        
+    }
+
+    .tab-2-content-inner .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .showcase-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .showcase-content p {
+        font-size: 0.8rem;
+    }
+
+    .btn-xl {
+        font-size: 1rem;
+        padding: 1rem 1.3rem;
+    }
+
+    .showcase-content {
+        margin-top: 5rem;
+    }
 }
